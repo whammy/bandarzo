@@ -30,7 +30,14 @@
         <% end -%>
       </div>
       <div id="main">
-        <%= yield %>
+        <div class="block">
+          <div class="content">
+            <div class="inner">
+            <%= yield %>
+            </div>
+          </div>
+        </div>
+      
         <div id="footer">
           <div class="block">
             <p>Copyright &copy; <%= Time.now.year %> Web App.</p>
