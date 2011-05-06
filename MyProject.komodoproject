@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="3851aaa4-d90b-4525-b8af-6c7c3108a221" kpf_version="5" name="MyProject.komodoproject">
+<preference-set idref="3851aaa4-d90b-4525-b8af-6c7c3108a221">
+  <string relative="path" id="import_dirname"></string>
+  <string id="import_exclude_matches">*.*~;*.bak;*.tmp;CVS;.#*;*.pyo;*.pyc;.svn;_svn;.git;.hg;.bzr;*%*;tmp*.html;.DS_Store;*.swp;*.kpf;*.komodoproject;*.komodotools</string>
+  <string id="import_include_matches"></string>
+  <string id="mappedPaths"></string>
+</preference-set>
+</project>

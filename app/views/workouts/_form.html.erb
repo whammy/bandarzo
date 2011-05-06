@@ -1,0 +1,30 @@
+<%= nested_form_for(@workout) do |f| %>
+  <% if @workout.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@workout.errors.count, "error") %> prohibited this workout from being saved:</h2>
+
+      <ul>
+      <% @workout.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+    <div class="field workouttitle">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    </div>
+ 
+ 
+ <%= f.fields_for :stages do |stage_form| %>
+  <%= render "stage_fields", :stage_form => stage_form %>
+  <% end %>
+  
+ <!-- <div><%= f.link_to_add "Add a stage", :stages %></div> -->
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

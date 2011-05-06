@@ -1,0 +1,23 @@
+MVP
+Clean layouts- side bars and main box
+Printable view with no layout
+Github
+Heroku
+
+
+NICE TO HAVE
+
+about page; I like this one http://pastie.org/about/
+User and Log in
+Remove blanks
+Pre-set stages- parametrize?
+share workout
+embedd code
+sum up distance
+add comments to workouts
+Add ordering to stages (and items?) is it needed?
+
+Parse free text of the pattern number X number text
+
+Done
+clone workout

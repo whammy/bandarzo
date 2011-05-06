@@ -1,0 +1,7 @@
+<ul class="navigation">
+    <li><%= link_to raw("<strong>Share</strong> Workout"), @workout %></li>
+    <li><%= link_to raw("<strong>Edit</strong> Workout"), edit_workout_path(@workout) %></li>
+    <li><%= link_to raw("<strong>Duplicate</strong> Workout"), duplicate_workout_path(@workout) %></li>
+    <li><%= link_to raw("<strong>Download</strong> as PDF"), @workout %></li>
+    <li><%= link_to raw("<strong>Delete</strong> Workout"), @workout, :confirm => 'Are you sure?', :method => :delete %></li>
+</ul>

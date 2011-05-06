@@ -1,0 +1,28 @@
+<% content_for :sidebar do %>
+ <%= render "workout_menu" %>
+<%end%>
+
+
+<div class="block">
+   
+  <div class="content">
+    <h2 class="title"><%= @workout.title %></h2>
+      
+    <div class="inner">
+      <table class="table">
+      <% @workout.stages.each do |stage| %>
+        <tr class="stage">
+          <th colspan="2"><%=stage.name %></th>
+        </tr>
+        <% stage.items.each do |item| %>
+          <tr>
+            <td style="width:10%"><%= reps_and_distance(item) %></td>
+            <td ><%= item.pace %></td>
+          </tr>
+        <%end%>
+      <%end%>
+      </table>
+    <p><strong>Distance: <%= @workout.total_distance %></strong></P>
+    </div>
+  </div>
+</div>

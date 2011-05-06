@@ -1,0 +1,11 @@
+
+<% content_for :sidebar do %>
+ <%= render "workouts_menu" %>
+<%end%>
+
+<ul>
+<% @workouts.each do |workout| %>
+  <li><%= link_to workout.title, workout %></li>
+  
+<% end %>
+</ul>

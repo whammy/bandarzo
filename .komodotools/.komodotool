@@ -1,0 +1,9 @@
+{
+  "set_selection": "true", 
+  "type": "snippet", 
+  "name": "", 
+  "value": [
+    "!@#_anchor!@#_currentPos"
+  ], 
+  "indent_relative": "false"
+}

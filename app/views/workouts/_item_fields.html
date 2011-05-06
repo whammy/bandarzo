@@ -1,0 +1,10 @@
+  
+  <div>
+  <%= item_form.text_field :repetitions,:size =>5 %>
+  <%= item_form.text_field :distance ,:size =>5%>
+  <%= item_form.text_area :pace, :rows => 2 %>
+   <%= item_form.link_to_remove(:title => "Remove this item") do %>
+  <%= image_tag '/images/web-app-theme/icons/cross.png' %>
+  <% end %>
+ 
+  </div>

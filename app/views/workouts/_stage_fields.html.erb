@@ -1,0 +1,14 @@
+
+<div class="stage">
+<div class="stagename">
+ <!-- <h1><%= stage_form.object.send(:name)%></h1>-->
+ 
+  <%= stage_form.text_field :name %>
+ <%= stage_form.link_to_remove "Remove this stage" %> 
+</div>
+  <%= stage_form.fields_for :items do |item_form| %>
+    <%= render "item_fields", :item_form => item_form %>
+  <% end %>
+<div><%= stage_form.link_to_add "Add an item", :items %>
+ </div>
+</div>
