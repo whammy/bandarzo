@@ -9,7 +9,13 @@ class Stage < ActiveRecord::Base
                                 
   
   def total_distance
-        items.size == 0 ? 0 : items.sum("distance * repetitions")
+    
+    if items.size == 0
+     0
+    else
+      result =  items.sum("distance * repetitions")
+      result.is_a?(String) ? 0 : result
+    end
   end
   
   def make_copy
